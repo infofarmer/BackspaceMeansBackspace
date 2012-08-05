@@ -1,0 +1,13 @@
+{
+  "name": "BackspaceMeansBackspace",
+  "version": "1.2",
+  "description": "Prevents the Backspace key from triggering the browser Back action.",
+  "update_url": "http://www.nollegcraft.com/code/GoogleChromeExtension/BackspaceMeansBackspace/updates.xml",
+  "content_scripts": [
+	{
+		"matches": ["http://*/*", "https://*/*", "file:///*", "ftp://*/*"],
+		"js": ["BackspaceMeansBackspace.js"],
+		"run_at": "document_start"
+	}
+  ]
+}
